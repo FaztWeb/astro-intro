@@ -1,0 +1,24 @@
+---
+import Hello from '../components/Hello.astro'
+import Post from '../components/Post'
+
+const greeting = "Hello World"
+const items = ["Dog", "Cat", "Platipus"];
+---
+
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+    <p>{greeting}</p>
+    <ul>
+	{items.map(item => <li>{item}</li>)}
+    </ul>
+
+    <Hello name="fazt" />
+	<Hello name={30} />
+    <Hello/>
+
+    <Post/>
+    
+  </body>
+</html>

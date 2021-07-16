@@ -1,0 +1,21 @@
+---
+export interface Props {
+	name: string;
+}
+
+const {name} =  Astro.props
+
+
+
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await res.json();
+---
+
+<h1>hello {name}</h1>
+
+<div>{data.map(post => (
+	<div>
+		<h6>{post.title}</h6>
+		<p>{post.body}</p>
+	</div>
+))}</div>

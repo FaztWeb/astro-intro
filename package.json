@@ -1,0 +1,17 @@
+{
+  "name": "new-project-directory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^0.17.2",
+    "react-toastify": "^7.0.4"
+  }
+}
